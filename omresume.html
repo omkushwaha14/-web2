@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Resume website</title>
+
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+        }
+        #header{
+         height:100vh;
+          background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("cup_tea_flowers.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+        .user-box{
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position:absolute;
+
+        }
+        .user-box img{
+            border-radius:50%;
+            width:300px;
+            border:2px solid crimson;
+        }
+        .user-box h1{
+            color: #fff2f2;
+            font-weight: bold;
+            margin:10px;
+        }
+        .user-box p{
+            color: whitesmoke;
+        }
+        .about{
+            padding-top: 100px;
+            padding-bottom:50px;
+        }
+        .profile-img{
+            height: 400px;
+        }
+        .nav-bar{
+            top:0%;
+            position: sticky;
+            z-index: 2;
+
+        }
+        .navbar{
+            background:green;
+        }
+        .navbar-toggler{
+            outline:none !important;
+        }
+        .nav-link{
+            color: white;
+        }
+.navbar-brand{
+    color: whitesmoke;
+    font-weight: bold;
+}
+        .timeline li{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            background: whitesmoke;
+        }
+        .resume h3{
+         align-items : center;
+        }
+
+    </style>
+</head>
+<body>
+<section id="header">
+    <div class="container text-center">
+        <div class ="user-box">
+            <img height="300" width="300" src="IMG_20180324_092503_950.jpg">
+
+            <h1>OM NATH KUSHWAHA</h1>
+            <p>web developer</p>
+
+        </div>
+    </div>
+</section>
+<section id="user-profile">
+    <div class="nav-bar">
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+
+            <i class="material-icons">menu</i>        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link"  href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"   href="#">RESUME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">HOBBIES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#" >ABOUT ME</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+<!---------about----------->
+<div class="about container" id="about">
+    <div class="row">
+     <div class="col-md-6 text-center">
+         <img src="IMG_20180324_092503_950.jpg" class="profile-img">
+
+
+     </div>
+        <div class="col-md-6">
+        <h3 class="text-center">INTRODUCTION</h3>
+            <p>I am om nath kushwaha,a computer science(CO) student at DELHI TECHNOLOGICAL UNIVERSITY.
+                I am from chandrapur,Nepal pursuing B.TECH in this college
+            </p>
+        </div>
+    </div>
+</div>
+   <!----------resume---->
+      <div class="resume" id="resume">
+       <div class="container">
+           <div class="row">
+            <div class="col-md-6" >
+              <h3 class="text-center">My Skills</h3>
+                <ul class="timeline">
+                    <li>
+                    <h4>Web developer-2019</h4>
+                        <p>I have a complete knowledge of FRONT END DEVELOPMENT using HTML,CSS,JAVASCRIPT and BACKEND using Node.js.Beside this i have done projects like making SHOPPING CARTS,WEB SOCKETS etc. </p>
+
+                    </li>
+                    <li>
+                        <h4 >Aurdino projects-2018</h4>
+                        <p>Aurdino based drone using MPU6050 Accelerometer and Gyroscope sensor implemented,2.4Ghz transmitter and receiver,1000Kv Bldc motor and 10-45 propller. </p>
+                    </li>
+
+                </ul>
+            </div>
+               <div class="col-md-6" >
+                   <h3 class="text-center">EDUCATION</h3>
+                   <ul class="timeline">
+                       <li>
+                           <h4>Intermediate(HSEB)-2017</h4>
+                           <div style="">pentagon international college<div/>
+                            <p>Location:Raja Janak Marg, 44600
+                                Tinkune, Kathmandu,
+                                Nepal</p>
+
+                       </li>
+                       <li>
+                           <h4 >SEE (Nepal Board)-2015</h4>
+                        <div>Chandra jyoti Boarding School</div>
+                         <div>Location:chandrapur,Nepal </div>
+                       </li>
+
+                   </ul>
+               </div>
+           </div>
+           <h3>Advantures</h3>
+
+           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+               <ol class="carousel-indicators">
+                   <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                   <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                   <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+               </ol>
+               <div class="carousel-inner">
+                   <div class="carousel-item active" data-interval="2000">
+                       <img  src="omsimg.jpeg" class="d-block w-100">
+                   </div>
+                   <div class="carousel-item" data-interval="2000">
+                       <img src="kedhar.jpeg" class="d-block w-100">
+                   </div>
+                   <div class="carousel-item" data-interval="2000">
+                       <img src="badri.jpeg" class="d-block w-100">
+                   </div>
+               </div>
+               <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                   <span class="sr-only">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                   <span class="sr-only">Next</span>
+               </a>
+           </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       </div>
+      </div>
+    </div>
+</section>
+</body>
+</html>
